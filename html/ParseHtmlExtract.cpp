@@ -42,7 +42,7 @@ void Html::ParseHtmlExtract::beginParsing()
 void Html::ParseHtmlExtract::foundTag( Node node, bool isEnd )
 {
 
-	// Èç¹û²»ÊÇÈçÏÂµÄ¼¸¸ö£¬Ôò·µ»Ø
+	// å¦‚æœä¸æ˜¯å¦‚ä¸‹çš„å‡ ä¸ªï¼Œåˆ™è¿”å›
 	if(
 		(strcasecmp(node.tagName().c_str(), "a")) &&
 		(strcasecmp(node.tagName().c_str(), "meta")) &&
@@ -207,7 +207,7 @@ void Html::ParseHtmlExtract::foundTag( Node node, bool isEnd )
 						/*}
 						catch(boost::regex::bad_expression  ec )
 						{
-						writeToLog("½âÎö´íÎó" , rtc);
+						writeToLog("è§£æé”™è¯¯" , rtc);
 						writeToLog(ec.message() , rtc);
 						break;
 						}*/
